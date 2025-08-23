@@ -109,6 +109,19 @@ h1 {
   background: #4056a1;
 }
 
+/* Ocultar las características inicialmente */
+.info-lugar .caracteristicas {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar las características al hacer clic en el botón "detalle" */
+.ciudades-item.active .caracteristicas {
+  display: block;
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .Ciudades {
     grid-template-columns: 1fr;
